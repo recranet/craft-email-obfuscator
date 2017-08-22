@@ -7,5 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Propaganistas\\EmailObfuscator\\' => array($vendorDir . '/propaganistas/email-obfuscator/src'),
-    'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src/Composer/Installers'),
 );

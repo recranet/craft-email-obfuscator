@@ -6,4 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Propaganistas\\EmailObfuscator\\Laravel\\Middleware' => $vendorDir . '/propaganistas/email-obfuscator/src/Laravel/Middleware.php',
+    'Propaganistas\\EmailObfuscator\\Twig\\Extension' => $vendorDir . '/propaganistas/email-obfuscator/src/Twig/Extension.php',
 );

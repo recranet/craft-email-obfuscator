@@ -15,10 +15,6 @@ class ComposerStaticInit7f4edb6db45e2a1d02a25c70c5591311
         array (
             'Propaganistas\\EmailObfuscator\\' => 30,
         ),
-        'C' => 
-        array (
-            'Composer\\Installers\\' => 20,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -26,10 +22,11 @@ class ComposerStaticInit7f4edb6db45e2a1d02a25c70c5591311
         array (
             0 => __DIR__ . '/..' . '/propaganistas/email-obfuscator/src',
         ),
-        'Composer\\Installers\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/composer/installers/src/Composer/Installers',
-        ),
+    );
+
+    public static $classMap = array (
+        'Propaganistas\\EmailObfuscator\\Laravel\\Middleware' => __DIR__ . '/..' . '/propaganistas/email-obfuscator/src/Laravel/Middleware.php',
+        'Propaganistas\\EmailObfuscator\\Twig\\Extension' => __DIR__ . '/..' . '/propaganistas/email-obfuscator/src/Twig/Extension.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -37,6 +34,7 @@ class ComposerStaticInit7f4edb6db45e2a1d02a25c70c5591311
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit7f4edb6db45e2a1d02a25c70c5591311::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit7f4edb6db45e2a1d02a25c70c5591311::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit7f4edb6db45e2a1d02a25c70c5591311::$classMap;
 
         }, null, ClassLoader::class);
     }
