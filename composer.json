@@ -1,13 +1,14 @@
 {
     "name": "recranet/craft-email-obfuscator",
     "description": "This plugin adds the Email Obfuscator filter to Twig.",
+    "version": "1.1.0",
+    "type": "craft-plugin",
     "authors": [
         {
             "name": "Recranet",
             "email": "info@recranet.com"
         }
     ],
-    "type": "craft-plugin",
     "require": {
         "propaganistas/email-obfuscator": "^1.0"
     },
